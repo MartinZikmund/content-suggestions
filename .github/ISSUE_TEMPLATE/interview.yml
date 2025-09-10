@@ -1,0 +1,28 @@
+name: "🎤 Interview Suggestion"
+description: Suggest a guest for an interview
+labels: ["interview"]
+body:
+  - type: input
+    id: guest
+    attributes:
+      label: "Guest Name & Role"
+      placeholder: "e.g., John Doe, CEO of Contoso"
+    validations:
+      required: true
+  - type: textarea
+    id: topic
+    attributes:
+      label: "Topic / Focus"
+      description: "What should the interview cover? (e.g., developer productivity, .NET)"
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: "Potential Questions"
+      description: "Optional: Any specific questions you’d like me to ask?"
+  - type: input
+    id: references
+    attributes:
+      label: "References / Links"
+      placeholder: "Optional: guest's blog, GitHub, talks, or social profiles"
