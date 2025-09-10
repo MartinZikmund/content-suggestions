@@ -1,0 +1,21 @@
+name: "🎥 Video Suggestion"
+description: Suggest a topic for a YouTube video
+labels: ["video"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: "Proposed Title or Topic"
+      placeholder: "e.g., Building cross-platform apps with Uno Platform"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "What should this video explain/show/demo?"
+  - type: input
+    id: references
+    attributes:
+      label: "References / Links"
+      placeholder: "Optional: related blog posts, docs, repos"

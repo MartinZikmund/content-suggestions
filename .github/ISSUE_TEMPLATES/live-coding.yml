@@ -1,0 +1,21 @@
+name: "💻 Live Coding Topic"
+description: Suggest a topic to cover in a live coding stream
+labels: ["live-coding"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: "Proposed Topic"
+      placeholder: "e.g., Building a mini Alchemy game with Uno Platform"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "What should I build or explore?"
+      description: "Describe the live coding idea — app, library, challenge, or experiment."
+  - type: textarea
+    id: goals
+    attributes:
+      label: "What should viewers learn?"
+      description: "Optional: specific takeaways, frameworks, techniques."
