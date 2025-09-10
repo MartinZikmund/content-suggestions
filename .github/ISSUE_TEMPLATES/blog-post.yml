@@ -1,0 +1,21 @@
+name: "📝 Blog Post Suggestion"
+description: Suggest a topic for a blog post on mzikmund.dev
+labels: ["blog"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: "Proposed Title or Topic"
+      placeholder: "e.g., Deep dive into Uno Platform Hot Reload"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Explain the idea in detail. Why is it useful? What should it cover?"
+  - type: input
+    id: references
+    attributes:
+      label: "References / Links"
+      placeholder: "Optional: articles, docs, examples to build on"
