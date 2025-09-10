@@ -1,16 +1,11 @@
-name: "📱 Short video"
+name: "📱 YouTube Short Suggestion"
 description: Suggest a short-form content idea (e.g., <1 min tip, trick, or highlight)
 labels: ["short"]
 body:
-  - type: input
-    id: title
-    attributes:
-      label: "Proposed Idea"
-      placeholder: "e.g., Uno Platform tip: Grid vs StackPanel"
-    validations:
-      required: true
   - type: textarea
     id: description
     attributes:
       label: "Description"
       description: "Explain the short tip or key message in a few sentences."
+    validations:
+      required: true
